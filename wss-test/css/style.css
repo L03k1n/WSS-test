@@ -8,6 +8,9 @@
   font-family: "Century Gothic Bold";
   src: url("../fonts/centurygothic_bold.ttf");
 }
+a{
+  color: #181819;
+}
 .container {
   margin: 0 auto;
   padding: 0px 15px;
@@ -597,5 +600,5 @@ a {
     display: block !important;
   }
 }
-color: #181819;
+
 /*# sourceMappingURL=style.css.map */
