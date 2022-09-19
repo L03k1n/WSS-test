@@ -1,0 +1,67 @@
+h2
+  font-size: 36px
+  font-weight: 400
+  text-align: center
+  padding: 60px 0px
+  line-height: 44px
+  max-width: 754px
+  margin: 0 auto
+  color: #181819
+  display: flex
+  align-items: center
+  justify-content: center
+  &::after
+    content: "\A"
+    width: 3px
+    height: 3px
+    border-radius: 50%
+    background: #181819
+    display: inline-block
+    margin-left: 30px
+  &::before
+    content: "\A"
+    width: 3px
+    height: 3px
+    border-radius: 50%
+    background: #181819
+    display: inline-block
+    margin-right: 30px
+  @media (max-width: 576px)
+    font-size: 24px
+    padding: 30px 0px
+.catalog
+  display: grid
+  grid-template-columns: repeat(3, 1fr)
+  grid-template-rows: repeat(3)
+  row-gap: 60px
+  padding-bottom: 60px
+  @media (max-width: 1140px)
+    grid-template-columns: repeat(2, 1fr)
+  @media (max-width: 768px)
+    display: flex
+    gap: 15px
+    overflow-x: scroll
+    padding-bottom: 10px
+    margin-bottom: 60px
+  &__item
+    max-width: 360px
+    transition: .3s
+    text-decoration: none
+    img
+      transition: .3s
+    &:visited
+      color: #181819
+    &:hover
+      color: #9094A6
+      img
+        filter: brightness(0.8)
+    @media (max-width: 1140px)
+      justify-self: center
+      max-width: unset
+      width: unset
+      p
+        max-width: 360px
+    >p
+      font-size: 18px
+      padding-top: 20px
+      text-align: center

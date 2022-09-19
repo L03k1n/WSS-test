@@ -1,0 +1,173 @@
+.header
+  border-bottom: 1px #E8EAEF solid
+  // padding-top: 33px
+  // padding-bottom: 33.49px
+  background: #ffffffa1
+  backdrop-filter: blur(1px)
+  height: 94px
+  display: flex
+  align-items: center
+  justify-content: space-between
+  @media (min-width: 768px)
+    padding: 0px 85px 0px 93px
+  @media (max-width: 768px)
+    padding: 0px 15px
+    height: 85px
+  .container
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__main-logo
+    width: 176px
+    @media (max-width: 768px)
+      zoom: 0.7
+  &__links
+    display: flex
+    gap: 20px
+    width: 102px
+    margin-top: 12px
+    margin-left: 22px
+    justify-content: flex-end
+    @media (max-width: 768px)
+      display: none
+    a
+      color: #393C49
+      &:visited
+        color: #393C49
+      &:hover
+        color: #9094A6
+  &__lang
+    display: flex
+    justify-content: space-between
+    width: 116.35px
+    @media (max-width: 768px)
+      display: none
+    a
+      text-transform: uppercase
+      text-decoration: none
+      color: #9999A0
+      &:visited
+        color: #9999A0
+      &:hover
+        color: black
+  &__active-link
+    color: black !important
+    position: relative
+    &::after
+      content: "\A"
+      width: 3px
+      height: 3px
+      border-radius: 50%
+      background: black
+      display: inline-block
+      margin: 0 10px
+      position: absolute
+      left: 0%
+      bottom: 135%
+  &__menu-btn
+    width: 30px
+    height: 30px
+    position: relative
+    z-index: 2
+    overflow: hidden
+    cursor: pointer
+    display: none
+    @media (max-width: 768px)
+      display: block
+
+    span
+      width: 24px
+      height: 2px
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      background-color: #181819
+      transition: all 0.5s
+      &:nth-of-type(2)
+        top: calc(50% - 7px)
+      &:nth-of-type(3)
+        top: calc(50% + 7px)
+  &__mobile
+    display: none
+    @media (max-width: 768px)
+      display: block
+    nav
+      position: absolute
+      top: 85px
+      left: 0
+      right: 0
+      background: white
+      width: 100%
+      z-index: 99
+      ul
+        max-width: 540px
+        margin: 0 auto
+        list-style: none
+        display: flex
+        flex-wrap: wrap
+        column-gap: 40px
+        row-gap: 30px
+        padding: 20px 0px 40px
+        justify-content: center
+        li
+          display: flex
+          align-items: center
+          &::after
+            content: "\A"
+            width: 3px
+            height: 3px
+            border-radius: 50%
+            background: #181819
+            display: inline-block
+            margin-left: 6px
+          &::before
+            content: "\A"
+            width: 3px
+            height: 3px
+            border-radius: 50%
+            background: #181819
+            display: inline-block
+            margin-right: 6px
+
+      a
+        font-size: 14px
+        text-decoration: none
+        text-transform: uppercase
+        color: #181819
+        &:visited
+          color: #181819
+          &:hover
+            color: #9094A6
+  &__mobile-switcher
+    display: none
+    @media (max-width: 768px)
+      display: flex
+      align-items: center
+      justify-content: space-between
+      .header__links
+        display: flex
+        margin-top: 20px
+        margin-left: 0px
+        justify-content: flex-start
+        padding-bottom: 10px
+        gap: 23px
+        zoom: 1.5
+      .header__lang
+        display: flex
+        a
+          color: #9999A0
+          &:visited
+            color: #9999A0
+          &:hover
+            color: #181819 !important
+.header__menu-btn.active span:nth-of-type(1)
+  display: none
+
+.header__menu-btn.active span:nth-of-type(2)
+  top: 50%
+  transform: translate(-50%, 0%) rotate(45deg)
+
+.header__menu-btn.active span:nth-of-type(3)
+  top: 50%
+  transform: translate(-50%, 0%) rotate(-45deg)

@@ -1,0 +1,58 @@
+{
+  "name": "asl_company",
+  "version": "1.0.0",
+  "private": true,
+  "description": "new",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nazar Tverdokhlib",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abyss-soft/gulp4-html.git"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "browser-sync": "^2.24.7",
+    "del": "latest",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "latest",
+    "gulp-babel": "^8.0.0",
+    "gulp-cache": "latest",
+    "gulp-clean-css": "^3.10.0",
+    "gulp-if": "latest",
+    "gulp-imagemin": "7.0.0",
+    "gulp-minify-css": "^1.2.3",
+    "gulp-plumber": "latest",
+    "gulp-postcss": "^8.0.0",
+    "gulp-px-to-rem": "^1.0.4",
+    "gulp-px2rem-converter": "^1.5.9",
+    "gulp-remove-html-comments": "^1.0.1",
+    "gulp-rigger": "latest",
+    "gulp-sass": "latest",
+    "gulp-sourcemaps": "latest",
+    "gulp-string-replace": "latest",
+    "gulp-uglify": "^3.0.1",
+    "gulp-useref": "latest",
+    "imagemin-jpeg-recompress": "latest",
+    "imagemin-pngquant": "latest",
+    "node-bourbon": "latest",
+    "run-sequence": "latest"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 3 version"
+  ],
+  "dependencies": {
+    "autoprefixer": "^9.8.4",
+    "bootstrap": "^4.1.3",
+    "gulp-calc": "^1.0.3",
+    "gulp-file-include": "^2.3.0",
+    "gulp-rename": "^1.4.0",
+    "rigger": "^1.0.0",
+    "sass": "^1.42.1"
+  }
+}
